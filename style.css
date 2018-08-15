@@ -1,0 +1,34 @@
+*{
+	margin: 0;
+	padding: 0;
+	outline: none;
+}
+h1{
+	padding: 20px 0;
+}
+.play, .new_game{
+	cursor: pointer;
+	font-style: italic;
+	line-height: 1.4;
+}
+#tic-tac-toe{
+	max-width: 150px;
+	max-height: 150px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	font-size: 0;
+}
+.center{
+	text-align: center;
+}
+.field{
+	display: inline-block;
+	vertical-align: top;
+	width: 33%;
+	height: 50px;
+	outline: 1px solid #333;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: 700;
+	line-height: 50px;
+}

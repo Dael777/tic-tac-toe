@@ -22,6 +22,8 @@ class TicTacToe{
 	constructor(elem, mode){
 		this.elem = elem;
 		this.mode = mode;
+
+		console.log(mode);
 		this.clickCount = 0;
 
 		this._init();
@@ -136,6 +138,12 @@ class TicTacToe{
 			   (id3.innerHTML === id6.innerHTML && id3.innerHTML === id9.innerHTML)
 			  )
 			  {	this.whoWins(target); return target; }
+		}
+
+		// Проверка на ничью
+		if(this.clickCount == 9){
+			alert('Ничья');
+			this.elem.removeEventListener('click', this.addTicTac);
 		}
 	}
 
